@@ -5,6 +5,13 @@
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
 
+
+{% set html_class = 'mac-soft ' + theme.scheme %}
+{% if theme.use_motion %}
+  {% set html_class = html_class + ' use-motion' %}
+{% endif %}
+
+
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
   {% include '_partials/head.swig' %}

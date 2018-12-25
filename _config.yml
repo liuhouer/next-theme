@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /octopus.png
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -37,11 +37,15 @@ seo: false
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
+  首页: /
   #categories: /categories
-  #about: /about
-  archives: /archives
-  tags: /tags
+  关于: /about
+  旅行: /travel
+  微世界: /landscape
+  音乐: /music
+  读书: /books
+  归档: /archives
+  #tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -62,6 +66,14 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  首页: home
+  #categories: /categories
+  关于: user
+  旅行: ship
+  微世界: reddit-alien
+  音乐: music
+  读书: book
+  归档: archive
 
 
 
@@ -71,8 +83,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -94,13 +106,13 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Boogaloo
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: Roboto Slab
 
   # Font settings for posts
   # Fallback to `global` font settings.
@@ -113,13 +125,13 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Satisfy
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Roboto
     size:
 
 
@@ -135,6 +147,11 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
+social:
+  GitHub: https://github.com/liuhouer
+  Twitter: https://twitter.com/liuhouer
+  Facebook: https://www.facebook.com/bruce.mo.7
+  # 等等
 
 
 # Social Links Icons
@@ -148,7 +165,7 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  Facebook: facebook-square
 
 
 # Sidebar Avatar
@@ -204,7 +221,11 @@ sidebar:
 #links_layout: inline
 #links:
   #Title: http://example.com/
-
+links_title: Links
+links:
+  NorthPark: https://northpark.cn/?,NorthPark-小清新的软件、影视、心情、图片互动公园
+  挖粪の男孩: http://effine.cn/?,哈哈，他叫verphen，故给他起绰号挖粪男孩
+  OldのSix: http://lonelyrobots.cn/?,哈哈，他排行老六，又名撒币六子
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -277,7 +298,7 @@ highlight_theme: normal
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -295,7 +316,7 @@ mathjax:
 #disqus_shortname:
 
 # Hypercomments
-#hypercomments_id:
+#hypercomments_id: 8040051
 
 # Gentie productKey
 #gentie_productKey:
@@ -312,7 +333,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8yNzgzNy80NDEz
 
 # Baidu Share
 # Available value:
@@ -396,20 +417,20 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: <i class="fa fa-user"></i> &nbsp;   本站访客数
+  site_uv_footer: 人次
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: <i class="fa fa-eye"></i>  &nbsp; 本站总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
-
+  page_pv_header: <i class="fa fa-file-o"></i> &nbsp;  本文总阅读量
+  page_pv_footer: 次
+ 
 
 # Tencent analytics ID
 # tencent_analytics:
@@ -442,7 +463,7 @@ calendar:
 algolia_search:
   enable: false
   hits:
-    per_page: 10
+    per_page: 6
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
@@ -472,6 +493,11 @@ fancybox: true
 
 # Canvas-nest
 canvas_nest: false
+
+
+reward_comment: 生活不止苟且,还有我喜爱的海岸.
+wechatpay: http://liuhouer.heartill.com/blog/donate/praise.jpg
+alipay: http://liuhouer.heartill.com/blog/donate/alipay.png
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
